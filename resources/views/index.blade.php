@@ -53,38 +53,8 @@
         </div>
     </div>
 
-    <div class="row mt-4">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-header">
-                    <h5 class="card-title">List Transaksi</h5>
-                </div>
-                <div class="card-body">
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Kategori</th>
-                                <th>Nominal</th>
-                                <th>Tujuan</th>
-                                <th>ID Akun</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($transactions as $transaction)
-                                <tr>
-                                    <td>{{ $transaction->id }}</td>
-                                    <td>{{ $transaction->kategori }}</td>
-                                    <td>{{ $transaction->nominal }}</td>
-                                    <td>{{ $transaction->tujuan }}</td>
-                                    <td>{{ $transaction->account_id }}</td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    </table>
+
 
 @endsection
