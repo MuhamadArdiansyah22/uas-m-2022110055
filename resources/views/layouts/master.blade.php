@@ -36,18 +36,24 @@
 
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
-                <a class="p-2 link-secondary" href="#">World</a>
-                <a class="p-2 link-secondary" href="#">U.S.</a>
-                <a class="p-2 link-secondary" href="#">Technology</a>
-                <a class="p-2 link-secondary" href="#">Design</a>
-                <a class="p-2 link-secondary" href="#">Culture</a>
-                <a class="p-2 link-secondary" href="#">Business</a>
-                <a class="p-2 link-secondary" href="#">Politics</a>
-                <a class="p-2 link-secondary" href="#">Opinion</a>
-                <a class="p-2 link-secondary" href="#">Science</a>
-                <a class="p-2 link-secondary" href="#">Health</a>
-                <a class="p-2 link-secondary" href="#">Style</a>
-                <a class="p-2 link-secondary" href="#">Travel</a>
+                <a href="{{ route('transactions.index') }}" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.354 4.646a.5.5 0 0 1 0 .708L7.707 8l3.647 3.646a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708 0z" />
+                    </svg>
+                    Menu Transaction
+                </a>
+
+                <a href="{{ route('accounts.index') }}" class="btn btn-primary">
+                    Menu Account
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.646 11.354a.5.5 0 0 0 0-.708L8.293 8 4.646 4.354a.5.5 0 1 0-.708.708l4 4a.5.5 0 0 0 0 .708l-4 4a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708z" />
+                    </svg>
+                </a>
+
             </nav>
         </div>
     </div>

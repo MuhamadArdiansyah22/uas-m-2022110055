@@ -7,7 +7,7 @@
         <div class="col-md-4">
             <div class="card mb-4 bg-warning text-white">
                 <div class="card-body">
-                    <h5 class="card-title">Jumlah Data Akun Terdaftar</h5>
+                    <h5 class="card-title">Jumlah Data Akun</h5>
                     <p class="card-text h2">{{ $jumlahAccount }}</p>
                 </div>
             </div>
@@ -87,12 +87,4 @@
         </div>
     </div>
 
-    <div class="row mt-4">
-        <div class="col-md-6">
-            <a href="{{ route('transactions.index') }}" class="btn btn-primary">Ke Master Transaction</a>
-        </div>
-        <div class="col-md-6">
-            <a href="{{ route('accounts.index') }}" class="btn btn-primary">Ke Master Account</a>
-        </div>
-    </div>
 @endsection
