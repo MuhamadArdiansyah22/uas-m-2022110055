@@ -1,5 +1,6 @@
-![image](https://github.com/MuhamadArdiansyah22/uas-m-2022110055/assets/114278561/40cfa27a-2ed4-4c48-9375-01f8aa3f7f1c)Berikut design halaman utama
-![Screenshot 2023-12-23 232539](https://github.com/MuhamadArdiansyah22/uas-m-2022110055/assets/114278561/ce162f28-1e50-40f3-86cc-05620288f2aa)
+Berikut halaman utama
+![image](https://github.com/MuhamadArdiansyah22/uas-m-2022110055/assets/114278561/8db6df18-e5b2-4bbe-86df-161b83d93e22)
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
