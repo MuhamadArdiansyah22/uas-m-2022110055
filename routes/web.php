@@ -25,6 +25,6 @@ Route::get('/', [AppController::class, 'index'])->name('index');
 
 Route::resource('accounts', AccountController::class);
 Route::resource('transactions', TransactionController::class);
-Route::get('/', function () {
-    return view('admin.adminlte');
-});
+// Route::get('/', function () {
+//     return view('layouts/master');
+// });

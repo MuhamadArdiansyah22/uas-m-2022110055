@@ -7,36 +7,35 @@
         <div class="col-md-12">
             <h2>Daftar Transaksi</h2>
             <p><a href="{{ route('transactions.create') }}" class="btn btn-primary">Buat Transaksi Baru</a></p>
-            @if(session('success'))
+            @if (session('success'))
                 <div class="alert alert-success">
                     {{ session('success') }}
                 </div>
             @endif
-            <table class="table">
+            <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Kategori</th>
-                        <th>Nominal</th>
-                        <th>Tujuan</th>
-                        <th>ID Akun</th>
+                        <th class="bg-primary text-white">ID</th>
+                        <th class="bg-primary text-white">Kategori</th>
+                        <th class="bg-primary text-white">Nominal</th>
+                        <th class="bg-primary text-white">Tujuan</th>
+                        <th class="bg-primary text-white">ID Akun</th>
                     </tr>
                 </thead>
                 <tbody>
                     @forelse ($transactions as $transaction)
                         <tr>
-                            <td>{{ $transaction->id }}</td>
-                            <td>{{ $transaction->kategori }}</td>
-                            <td>{{ $transaction->nominal }}</td>
-                            <td>{{ $transaction->tujuan }}</td>
-                            <td>{{ $transaction->account_id }}</td>
-                            <td>
-                                <!-- Add action buttons as needed -->
+                            <td class="bg-light">{{ $transaction->id }}</td>
+                            <td class="bg-light">{{ $transaction->kategori }}</td>
+                            <td class="bg-light">{{ $transaction->nominal }}</td>
+                            <td class="bg-light">{{ $transaction->tujuan }}</td>
+                            <td class="bg-light">{{ $transaction->account_id }}</td>
+                            <td class="bg-light">
                             </td>
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="6">Data Transaksi tidak ditemukan.</td>
+                            <td colspan="5" class="bg-light">Data Transaksi tidak ditemukan.</td>
                         </tr>
                     @endforelse
                 </tbody>
